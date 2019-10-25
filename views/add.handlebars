@@ -8,32 +8,33 @@
           <p>{{text}}</p>
         </div>
       {{/each}}
-      <form action="/gigs/add" method="POST">
+      <form action="/tasks/add" method="POST">
         <div class="input-group">
-          <label for="title">Task Title</label>
-          <input type="text" name="title" id="title" class="input-box" placeholder="eg. Small Wordpress website, React developer"
+          <label for="task_title">Task Title</label>
+          <input type="text" name="task_title" id="task_title" class="input-box" placeholder="eg. Rick & Morty themed login"
             maxlength="100" value={{task_title}}>
         </div>
         <div class="input-group">
-          <label for="technologies">Task Description</label>
-          <input type="text" name="technologies" id="technologies" class="input-box" placeholder="eg. javascript, react, PHP"
-          maxlength="100" value={{task_description}}>
+          <label for="task_description">Task Description</label>
+          <textarea name="task_description" id="task_description" class="input-box" placeholder="Describe the details of the task"
+            rows="10">{{task_description}}</textarea>
         </div>
         <div class="input-group">
-          <label for="budget">Task Technologies</label>
-          <input type="number" name="budget" id="budget" class="input-box" placeholder="eg. 500, 5000, 10000" value={{task_technologies}}>
+          <label for="task_technologies">Task Technologies</label>
+          <input type="text" name="task_technologies" id="task_technologies" class="input-box" placeholder="eg. Nodejs, FLASK"
+          maxlength="100" value={{task_technologies}}>
         </div>
         <div class="input-group">
-          <label for="description">Task Team</label>
-          <textarea name="description" id="description" class="input-box" placeholder="Describe the details of the gig"
-            rows="10">{{task_team}}</textarea>
+          <label for="task_team">Task Team</label>
+          <input type="text" name="task_team" id="task_team" class="input-box" placeholder="Enter your team"
+            maxlength="100" value={{task_team}}>
         </div>
         <div class="input-group">
-          <label for="budget">Task Owner</label>
-          <input type="email" name="contact_email" id="contactemail" class="input-box" placeholder="Enter an email"
+          <label for="task_owner">Task Owner</label>
+          <input type="email" name="task_owner" id="task_owner" class="input-box" placeholder="Enter an email"
             value={{task_owner}}>
         </div>
-        <input type="submit" value="Add Gig" class="btn btn-reverse">
+        <input type="submit" value="Add Task" class="btn btn-reverse">
       </form>
     </div>
   </section>

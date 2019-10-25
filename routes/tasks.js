@@ -64,7 +64,7 @@ router.post('/add', (req, res) => {
                 task_team,
                 task_owner
             })
-            .then(tasks => res.redirect('/gigs'))
+            .then(tasks => res.redirect('/tasks'))
             .catch(err => console.log(err))
     }
 })
