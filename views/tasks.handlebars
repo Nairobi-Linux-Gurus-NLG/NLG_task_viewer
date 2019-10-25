@@ -1,0 +1,18 @@
+<section id="taskss" class="container">
+    <h1>All Tasks</h1>
+    {{#each tasks}}
+        <div class="gig">
+            <h3>{{task_title}}</h3>
+            <p>{{task_description}}</p>
+            <ul>
+                <li>Technologies: {{task_technologies}}</li>
+                <li><a href="Team: {{task_team}}" class="btn btn-reverse">View Now</a></li>
+            </ul>
+            <div class="tech">
+                <small>Owner: <span>{{task_owner}}</span></small>
+            </div>
+        </div>
+    {{else}}
+    <p>No Tasks</p>
+    {{/each}}
+  </section>
