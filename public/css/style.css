@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 :root {
-    --primary-color: #568c9b;
-    --primary-hover-color: #64a5b7;
+    --primary-color: #29cccf;
+    --primary-hover-color: #000;
     --bg-color: #333;
     --box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.7);
 }
@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: #fff;
 }
 
 .container {
@@ -66,7 +66,9 @@ header nav li {
     margin: 0 1rem;
 }
 
-
+header a {
+    color: #29cccf;
+}
 /* Login Button Spacing */
 
 
@@ -136,9 +138,10 @@ header.inner {
 .search-wrap h1 {
     font-size: 3rem;
     font-weight: 800;
-    color: #fff;
+    color: #29c9cf;
     margin: 0 0 1.5rem;
     text-align: center;
+
 }
 
 .search-form input[type='submit'] {
